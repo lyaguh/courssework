@@ -1,0 +1,21 @@
+{{!-- Шаблон для страницы "Статьи" --}}
+
+{{#if articless.length}}
+
+    {{#each articless}}
+
+        <a href="/article{{_id}}">
+            <div  class="listArticle">
+                <div class="flexLabelAuthor">
+                    <div class="listArticleLabel">{{label}}</div>
+                    <div class="listArticleAuthor">{{author}}</div>
+                </div>
+                <div class="listArticlePreview">{{content}}</div>
+            </div>
+        </a>
+    {{/each}}
+
+
+{{else}}
+<p>Нет статей :(</p>
+{{/if}}

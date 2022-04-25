@@ -1,0 +1,49 @@
+{{!-- Шаблон для шапки сайта, если пользователь не вошел в аккаунт--}}
+<section class="headder" id="headder">
+        <!-- <video autoplay loop muted id="wallVideo">
+            <source src="./Piano.mp4" type="video/mp4">
+        </video> -->
+    <div class="header_flex">
+        
+        <a href="#headder">
+            <img class="head_logo" src="./logo_white.png" alt="#">
+        </a>
+        <a href="/">
+            <div class="header_text">
+                <h1 class="header_title">Musthe</h1>
+                <h2 class="header_desc" style="font-family: 'Poppins', sans-serif;">Musica pro omnibus</h2>
+            </div>
+        </a>
+        <a href="/ring">
+            <div class="buttons, ring" >Кварто-квинтовый круг</div>
+        </a>
+            
+        {{#if isArticles}}
+        <a href="/articles">
+            <div class="currentPage, buttons, articles">Статьи</div>
+        </a>
+        {{else}}
+        <a href="/articles">
+            <div class="buttons, articles">Статьи</div>
+        </a>
+        {{/if}}
+            
+        {{#if isWrite}}
+        <a href="/writearticle">
+                <div class=" currentPage, buttons, writeArticle">Написать статью</div>
+        </a>
+        {{else}}
+        <a href="/writearticle">
+                <div class="buttons, writeArticle">Написать статью</div>
+        </a>
+        {{/if}}
+            
+        {{!-- <a href="./favorites.html">
+            <div class="buttons, info_button">Избранное</div> 
+        </a> --}}
+        <a href="/logout">
+            <div class="buttons, signup" id="logout">Выйти</div>
+        </a>
+            
+    </div> 
+</section>
