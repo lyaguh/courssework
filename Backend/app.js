@@ -33,7 +33,7 @@ app.use(mustheRoutes) //используем основной роутер
 
 const start = async () => {
   try {
-    await mongoose.connect('mongodb+srv://L4guh:12345679@cluster0.gw5os.mongodb.net/coursework'); //подключаемся к бд
+    await mongoose.connect(''); //подключаемся к бд
     //запускаем сервер
     app.listen(port, host , () => console.log(`Server listens http://${host}:${port}`))
   }catch(er) {
