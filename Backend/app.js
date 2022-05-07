@@ -1,5 +1,4 @@
 const express = require('express');
-const passport = require('passport');
 const mongoose = require('mongoose');
 const authRouter = require('./authRoute')
 const exphbs = require('express-handlebars')
@@ -42,8 +41,7 @@ const start = async () => {
 }
 
 
-// app.use(passport.initialize())
-// require('./middleware/passport')(passport)
+
 
 
 

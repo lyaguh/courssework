@@ -2,7 +2,7 @@ const Router = require('express');
 const router = new Router()
 const controller = require('./authController')
 const {check} = require('express-validator')
-const passport = require('passport')
+
 
 //post запрос по адресу /signin обслуживает контроллер signup
 router.post('/signup',[

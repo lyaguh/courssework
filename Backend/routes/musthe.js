@@ -1,7 +1,6 @@
 const {Router} = require('express')
 const Article = require('../models/articles')
 const router = Router()
-const passport = require('passport')
 const {cookieJwtAuth} = require('../middleware/cookieJwtAuth')
 const jwt = require('jsonwebtoken')
 const {secret} = require('../config')
@@ -73,7 +72,7 @@ router.get('/article*', async (req,res) => {
 
 
 
-// passport.authenticate('jwt', {session: false})
+
   
 router.get('/writearticle',cookieJwtAuth, (req, res) => { //применяем middleware,который 
     //проверяет токен , если все нормально и ссработала функция next(), запрос продолжается

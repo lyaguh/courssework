@@ -54,7 +54,7 @@ a {
 }
 
 
-.info_button, .ring, .articles, .writeArticle, .signup, .favorites {
+.info_button, .ring, .articles, .writeArticle, .signup{
     padding: 0.5em;
     margin-right: 1rem;
     cursor: pointer;
@@ -64,9 +64,7 @@ a {
     height: 2em;
 }
 
-.info_button:hover, .signup:hover, .ring:hover, .articles:hover, .writeArticle:hover, .favorites:hover {
-   /* background-color: powderblue; */
-   /* transition-duration: 1s;  */
+.info_button:hover, .signup:hover, .ring:hover, .articles:hover, .writeArticle:hover {
    border-bottom-style: solid;
    border-bottom-color: rgb(90, 90, 90);
 }
@@ -215,6 +213,12 @@ a {
 
 .win_signup {
     color: rgb(90, 90, 90);
+    cursor: pointer;
+    padding-left: 1em;
+}
+
+.win_signin {
+    cursor: pointer;
 }
 
 .signin_form {
